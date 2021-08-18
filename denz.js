@@ -258,7 +258,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumber = ["6285866295942@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
+		const ownerNumber = ["51902679067@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
 		const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
@@ -375,7 +375,7 @@ key: {
 					"retailerId": `${tampilUcapan} ${pushname}`,
 					"productImageCount": 1
 				},
-				    "businessOwnerJid": `0@s.whatsapp.net`
+				    "businessOwnerJid": `51902679067@s.whatsapp.net`
 		}
 	}
 }
@@ -865,8 +865,8 @@ denz.updatePresence(from, Presence.recording)
         switch (command) {
         	case 'menu':
         case 'help':
-       dtod = "6285866295942@s.whatsapp.net"
-       otod = `${NomorOwner}@s.whatsapp.net`
+       dtod = "51902679067@s.whatsapp.net"
+       otod = `$[51902679067}@s.whatsapp.net`
        stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
@@ -1749,7 +1749,7 @@ tagg = []
 teks = `Telah Dibaca Oleh :\n\n`
 for(let i of infom.reads){
 teks += '@' + i.jid.split('@')[0] + '\n'
-teks += `Waktu : ` + moment(`${i.t}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss') + '\n\n'
+teks += `Waktu : ` + moment(`${i.t}` * 1000).tz('America/Lima').format('DD/MM/YYYY HH:mm:ss') + '\n\n'
 tagg.push(i.jid)
 }
 mentions(teks, tagg, true)
